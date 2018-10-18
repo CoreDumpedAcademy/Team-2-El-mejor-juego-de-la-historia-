@@ -876,7 +876,7 @@ GameObject:
   - component: {fileID: 891314862}
   m_Layer: 0
   m_Name: Suelo
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1029,6 +1029,8 @@ GameObject:
   - component: {fileID: 933136759}
   - component: {fileID: 933136758}
   - component: {fileID: 933136757}
+  - component: {fileID: 933136761}
+  - component: {fileID: 933136762}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1130,6 +1132,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &933136761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 933136756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8e9249799f71a43bee86a816442bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grounded: 0
+  jumpPower: 9.8
+--- !u!114 &933136762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 933136756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6639ff308785147b0fbe18115ddc19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1031655806
 GameObject:
   m_ObjectHideFlags: 0
