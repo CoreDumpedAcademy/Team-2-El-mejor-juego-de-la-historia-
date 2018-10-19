@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grounded: 0
-  jumpPower: 9.8
+  jumpPower: 6.5
 --- !u!114 &933136762
 MonoBehaviour:
   m_ObjectHideFlags: 0
