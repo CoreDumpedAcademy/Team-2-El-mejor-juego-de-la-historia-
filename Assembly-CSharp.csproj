@@ -62,10 +62,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CheckGrounded.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\item.cs" />
     <Compile Include="Assets\Scripts\NotificationCenter.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Puntuacion.cs" />
+=======
+    <Compile Include="Assets\Scripts\Destroyer.cs" />
+    <Compile Include="Assets\Scripts\item_collider.cs" />
+    <Compile Include="Assets\Scripts\NotificationCenter.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Puntuacion.cs" />
+    <Compile Include="Assets\Scripts\Suelo.cs" />
+>>>>>>> master
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Clase/Universidad/Core Dumped/Juego Core/Endless runner/Team-2-El-mejor-juego-de-la-historia-/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
