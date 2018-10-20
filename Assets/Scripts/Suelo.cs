@@ -15,11 +15,4 @@ public class Suelo : MonoBehaviour {
 	void Update () {
         transform.Translate(Vector3.left * Time.deltaTime * speed);
 	}
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.tag == "suelo")
-        {
-            Destroy(col.gameObject);
-        }
-    }
 }

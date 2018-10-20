@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour {
 
+    public GameObject myPrefab;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -19,6 +21,7 @@ public class Destroyer : MonoBehaviour {
         if (col.gameObject.tag == "Ground")
         {
             Destroy(col.gameObject);
+            Instantiate(myPrefab, new Vector2(17, 0), Quaternion.identity);
         }
     }
 }
