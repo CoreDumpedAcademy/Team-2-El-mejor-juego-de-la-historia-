@@ -39,11 +39,10 @@ public class Destroyer : MonoBehaviour {
         int whichItem = Random.Range(0, myObjects.Length);
         BoxCollider2D bc2d = myGobj.GetComponent<BoxCollider2D>();
         float width = bc2d.bounds.size.x;
+        transform.position = new Vector2(-14 - width, transform.position.y);
         GameObject mygob = Instantiate(myObjects[whichItem], new Vector2(myGobj.transform.position.x+width+5, 0), Quaternion.identity);
         myGobj = mygob;
         bc2d = mygob.GetComponent<BoxCollider2D>();
         width = bc2d.bounds.size.x;
-        Debug.Log(width);
-        transform.position = new Vector2(-14-width, transform.position.y);
     }
 }

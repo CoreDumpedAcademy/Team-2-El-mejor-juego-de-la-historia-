@@ -55,9 +55,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnBecameInvisible()
+    /*private void OnBecameInvisible()
     {
         transform.position = new Vector3(-1, 0, 0);
-    }
+    }*/
 
 }
