@@ -18,7 +18,7 @@ public class CheckGrounded : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Ground")
+        if (col.gameObject.tag == "Ground"|| col.gameObject.tag == "Platform")
         {
             player.grounded = true;
         }
@@ -26,7 +26,7 @@ public class CheckGrounded : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Ground")
+        if (col.gameObject.tag == "Ground"||col.gameObject.tag == "Platform")
         {
             player.grounded = false;
         }
