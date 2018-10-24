@@ -65,7 +65,9 @@
     <Compile Include="Assets\Scripts\Destroyer.cs" />
     <Compile Include="Assets\Scripts\item.cs" />
     <Compile Include="Assets\Scripts\NotificationCenter.cs" />
+    <Compile Include="Assets\Scripts\pauseMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerKiller.cs" />
     <Compile Include="Assets\Scripts\Puntuacion.cs" />
     <Compile Include="Assets\Scripts\Suelo.cs" />
     <Reference Include="UnityEditor.StandardEvents">
