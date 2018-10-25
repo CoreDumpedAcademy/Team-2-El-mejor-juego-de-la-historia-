@@ -457,7 +457,7 @@ GameObject:
   - component: {fileID: 114353303580972408}
   m_Layer: 0
   m_Name: Prefab5
-  m_TagString: Untagged
+  m_TagString: prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

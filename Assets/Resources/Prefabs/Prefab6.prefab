@@ -277,7 +277,6 @@ GameObject:
   - component: {fileID: 4788503902002412}
   - component: {fileID: 61477022468619110}
   - component: {fileID: 251279532260995354}
-  - component: {fileID: 114748661079199542}
   m_Layer: 0
   m_Name: Plataforma 3x1 Negra
   m_TagString: Platform
@@ -569,7 +568,7 @@ GameObject:
   - component: {fileID: 114796994648563584}
   m_Layer: 0
   m_Name: Prefab6
-  m_TagString: Untagged
+  m_TagString: prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1146,7 +1145,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4236590145626876}
   - component: {fileID: 61089551552872956}
-  - component: {fileID: 114228451028643320}
   m_Layer: 0
   m_Name: Suelo (1)
   m_TagString: Ground
@@ -3123,30 +3121,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9252737, y: 0.6730671}
   m_EdgeRadius: 0
---- !u!114 &114228451028643320
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1605532196680546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861fb94f085a76649b5c9afd23b3ac5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
---- !u!114 &114748661079199542
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1105522077270822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 861fb94f085a76649b5c9afd23b3ac5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
 --- !u!114 &114796994648563584
 MonoBehaviour:
   m_ObjectHideFlags: 1

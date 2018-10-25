@@ -23,7 +23,6 @@ public class Destroyer : MonoBehaviour {
         if (col.gameObject.tag == "Ground"|| col.gameObject.tag == "Platform")
         {
             Destroy(col.gameObject);
-            //Instantiate(myPrefab, new Vector2(17, 0), Quaternion.identity);
         }
         else if (col.gameObject.tag == "prefab")
         {
