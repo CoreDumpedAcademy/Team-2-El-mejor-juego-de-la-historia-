@@ -5,6 +5,7 @@ using UnityEngine;
 public class Puntuacion : MonoBehaviour {
 
     private int puntuacion = 0;
+    private float timer;
     public TextMesh Marcador;
 
 	// Use this for initialization
@@ -27,6 +28,16 @@ public class Puntuacion : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        timer += Time.deltaTime;
+
+        if (timer > 1f)
+        {
+
+            puntuacion += 1;
+
+            ActualizarMarcador();
+
+            timer = 0;
+        }
+    }
 } 
