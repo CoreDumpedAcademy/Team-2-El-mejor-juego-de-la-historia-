@@ -18,7 +18,7 @@ TagManager:
   - 
   - Ground
   - Player
-  - 
+  - Background
   - 
   - 
   - 
@@ -41,6 +41,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 1184497957
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: sprites
+    uniqueID: 2839070051
     locked: 0
