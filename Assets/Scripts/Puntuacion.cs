@@ -14,13 +14,13 @@ public class Puntuacion : MonoBehaviour {
     void Start () {
         //NotificationCenter.DefaultCenter().AddObserver(this, "IncrementarPuntos");
         ActualizarMarcador();
-	}
+        GlobalVars.score = 0;
+    }
 	
     void IncrementarPuntos(Notification notificacion)
     {
         int puntosAIncrementar = (int)notificacion.data;
         puntuacion+=puntosAIncrementar;
-        GlobalVars.score += puntosAIncrementar;
         ActualizarMarcador();
     }
 
@@ -38,6 +38,7 @@ public class Puntuacion : MonoBehaviour {
         {
 
             puntuacion += 1;
+            GlobalVars.score += 1;
 
             ActualizarMarcador();
 

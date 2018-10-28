@@ -43,7 +43,7 @@ public class PlayerScoreList : MonoBehaviour {
 			GameObject go = (GameObject)Instantiate(playerScoreEntryPrefab);
 			go.transform.SetParent(this.transform);
 			go.transform.Find ("Username").GetComponent<Text>().text = name;
-			go.transform.Find ("Deaths").GetComponent<Text>().text = scoreManager.GetScore(name, "deaths").ToString();
+			//go.transform.Find ("Deaths").GetComponent<Text>().text = scoreManager.GetScore(name, "deaths").ToString();
 			go.transform.Find ("Assists").GetComponent<Text>().text = scoreManager.GetScore(name, "assists").ToString();
 		}
 	}

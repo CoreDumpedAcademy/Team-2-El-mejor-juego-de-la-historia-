@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour {
 
@@ -14,6 +15,13 @@ public class ScoreManager : MonoBehaviour {
 	int changeCounter = 0;
 
 	void Start() {
+        int winner=PlayerPrefs.GetInt("Highscore_count", 0);
+        for (int i = 0; i < winner; i++)
+        {
+            int play_num=Random.Range(0, 5437);
+            SetScore("Player"+play_num, "assists", PlayerPrefs.GetInt("Highscore_" + i, 0));
+            //SetScore(PlayerPrefs.GetString("User_" + i, "Player1"), "assists", PlayerPrefs.GetInt("Highscore_" + i, 0));
+        }
 	}
 
 	void Init() {
@@ -83,7 +91,6 @@ public class ScoreManager : MonoBehaviour {
 	public void DEBUG_INITIAL_SETUP() {
 		SetScore("quill18", "assists", 345);
 		
-		SetScore("bob", "deaths", 14345);
 		
 		SetScore("AAAAAA", "assists", 3);
 		SetScore("BBBBBB", "assists", 2);
@@ -93,5 +100,10 @@ public class ScoreManager : MonoBehaviour {
 
         Debug.Log (  GetScore("quill18", "assists") );
 	}
+
+    public void playAgain()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
 
 }
