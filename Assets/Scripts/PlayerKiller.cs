@@ -20,7 +20,17 @@ public class PlayerKiller : MonoBehaviour {
     {
         if (col.gameObject.tag == "Player")
         {
+            Debug.Log(PlayerPrefs.GetInt("Highscore_count"));
+            Debug.Log(PlayerPrefs.GetString("User_1"));
             SceneManager.LoadScene("SampleScene");
+        }
+    }
+
+    private void checkScores(int myscore)
+    {
+        for(int i=0;i< PlayerPrefs.GetInt("Highscore_count"); i++)
+        {
+
         }
     }
 }

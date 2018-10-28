@@ -20,6 +20,7 @@ public class Puntuacion : MonoBehaviour {
     {
         int puntosAIncrementar = (int)notificacion.data;
         puntuacion+=puntosAIncrementar;
+        GlobalVars.score += puntosAIncrementar;
         ActualizarMarcador();
     }
 
