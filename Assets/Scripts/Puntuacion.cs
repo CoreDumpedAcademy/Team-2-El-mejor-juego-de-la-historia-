@@ -10,11 +10,18 @@ public class Puntuacion : MonoBehaviour {
     //public TextMesh Marcador;
     public Text m_MyText;
 
+    public GameObject myImage;
+    Image m_Image;
+
+    Sprite[] mySprites;
+
     // Use this for initialization
     void Start () {
         //NotificationCenter.DefaultCenter().AddObserver(this, "IncrementarPuntos");
-        ActualizarMarcador();
+        m_Image = myImage.GetComponent<Image>();
+        mySprites= Resources.LoadAll<Sprite>("Rainb Sprites");
         GlobalVars.score = 0;
+        ActualizarMarcador();
     }
 	
     void IncrementarPuntos(Notification notificacion)
@@ -27,7 +34,10 @@ public class Puntuacion : MonoBehaviour {
     void ActualizarMarcador()
     {
         //Marcador.text = puntuacion.ToString();
-        m_MyText.text = puntuacion.ToString();
+        m_MyText.text = puntuacion.ToString("000");
+        //Sprite mysprite1 = mySprites[puntuacion/10];
+        int spriteIndex = (puntuacion / 10) <= 7 ? puntuacion / 10 : 7; 
+        m_Image.sprite = mySprites[spriteIndex];
     }
 
 	// Update is called once per frame
